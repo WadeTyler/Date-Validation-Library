@@ -1,12 +1,12 @@
-import {isAlpha} from "../index";
+import {isAlpha} from "./util-validations";
 
 export function isValidPhoneNumber(str: string): boolean {
   // Remove + () - and spaces
-  str.replace("\\s+", "");
-  str.replace("(", "");
-  str.replace(")", "");
-  str.replace("+", "");
-  str.replace("-", "");
+  str = str.replace(/\s+/g, "");
+  str = str.replace(/\(/g, "");
+  str = str.replace(/\)/g, "");
+  str = str.replace(/\+/g, "");
+  str = str.replace(/-/g, "");
 
   // Check length. 3 for Area Code, 7 for num
   if (str.length !== 10) return false;
