@@ -1,0 +1,29 @@
+{
+  "name": "dvalidation",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [
+    "data",
+    "validation",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Tyler Wade",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
